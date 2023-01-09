@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="lab.css">
+    <link href="http://fonts.cdnfonts.com/css/digital-numbers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="days">
+            <div id="0">SUN</div>
+            <div id="1">MON</div>
+            <div id="2">TUE</div>
+            <div id="3">WED</div>
+            <div id="4">THU</div>
+            <div id="5">FRI</div>
+            <div id="6">SAT</div>
+        </div>
+    
+        <div class="main">
+        <div class="hour">
+            
+        </div>
+        <div class="minuts">
+        </div>
+        <div class="sec"></div>
+        <div class="ampm">am</div>
+        
+        </div>
+        <div class="alarm"><i class="material-icons">alarm</i></div>
+    </div>
+
+
+    <div class= "container2">
+        <h1>SET ALARM</h1>
+        <form action="index.html" method="get" id="alarm">
+        <div class="halfcontainer">
+            <div class="Hour">
+                <label>HOURS</label>
+                <input type="number" name="Hour" id="Hour"  >
+            </div>
+            <div class="Min">
+                <label>MINUTES</label>
+                <input type="number" name="Min" id="Min"  >
+            </div>
+            <div class="Sec">
+                <label>SECONDS</label>
+                <input type="number" name="Sec" id="Sec"  >
+            </div>
+        </div>
+        <div class="valid">
+            <input type="submit" onclick="myFunction()" name="set" value="SET">
+            <input type="reset" name="CLEAR" value="CLEAR">
+        </div>
+    </form>
+    </div>
+
+    <script src="lab.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+</body>
+</html>

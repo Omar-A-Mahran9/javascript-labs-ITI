@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    z-index:2;
+    position: absolute;
+    text-align: center;
+    width: 800px;
+    opacity: 50%;
+    
+}
+.slide-container{
+    margin: 40px auto;
+    width:800px;
+    height: 250px;
+    position:relative;
+}
+
+.slide-container img{
+    position:absolute;
+     opacity: 0;
+     transition: opacity 1s;
+   
+   
+}
+
+.slide-container img.active{
+opacity: 1;
+}
+
+.slide-container .slide-number{
+    position: absolute;
+    left: 10px;
+    top:10px;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    z-index:2 ;
+    border-radius: 10px;
+}
+.slider-control{
+    width: 800px;
+    margin: auto;
+    z-index: 2;
+    position: absolute;
+    bottom: 50%;
+    align-items: center;
+}
+.slider-control .prev{
+    position: relative;
+    float:left;
+    background-color: rgb(2, 2, 100);
+    color: white;
+    
+    height: 55PX;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 60PX;
+    top: 33px;
+    padding-left: 5px;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.6);
+    padding-bottom: 80px;
+    cursor: pointer;
+    opacity: 30%;
+    user-select: none;
+    
+}
+.slider-control .Next{
+    opacity: 30%;
+    position: relative;
+    float:right;
+    border-radius: 20px;
+    background-color: rgb(2, 2, 100);
+    color: white;
+    
+    height: 55PX;
+    font-weight: bold;
+    font-size: 60PX;
+    top: 33px;
+    padding-left: 5px;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.6);
+    padding-bottom: 80px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slider-control .Next:hover{
+    opacity: 100%;
+    position: relative;
+    float:right;
+    border-radius: 20px;
+    background-color: rgb(2, 2, 100);
+    color: white;
+ 
+    height: 55PX;
+    font-weight: bold;
+    font-size: 60PX;
+    top: 33px;
+    padding-left: 5px;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.6);
+    padding-bottom: 80px;
+    cursor: pointer;
+}
+.slider-control .prev:hover{
+    opacity: 100%;
+    position: relative;
+    float:left;
+    border-radius: 20px;
+    background-color: rgb(2, 2, 100);
+    color: white;
+ 
+    height: 55PX;
+    font-weight: bold;
+    font-size: 60PX;
+    top: 33px;
+    padding-left: 5px;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.6);
+    padding-bottom: 80px;
+    cursor: pointer;
+}
+
+.slider-control  .disabled:hover{
+    opacity: 1;
+    position: relative;
+    float:left;
+    border-radius: 20px;
+    background-color: rgb(2, 2, 100);
+    color: white;
+    
+    height: 55PX;
+    font-weight: bold;
+    font-size: 60PX;
+    top: 33px;
+    padding-left: 5px;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.6);
+    padding-bottom: 80px;
+    cursor: no-drop;
+}
+
+.slider-control .disabled{
+    opacity: 1;
+    position: relative;
+    float:left;
+    border-radius: 20px;
+    background-color: rgb(2, 2, 100);
+    color: white;
+    
+    height: 55PX;
+    font-weight: bold;
+    font-size: 60PX;
+    top: 33px;
+    padding-left: 5px;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.6);
+    padding-bottom: 80px;
+    cursor: no-drop;
+}
+
+.slider-control  .disableed:hover{
+    opacity: 100%;
+    position: relative;
+    float:right;
+    border-radius: 20px;
+    background-color: rgb(2, 2, 100);
+    color: white;
+ 
+    height: 55PX;
+    font-weight: bold;
+    font-size: 60PX;
+    top: 33px;
+    padding-left: 5px;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.6);
+    padding-bottom: 80px;
+    cursor: no-drop;
+}
+
+.slider-control .disableed{
+    opacity: 1000%;
+    position: relative;
+    float:right;
+    border-radius: 20px;
+    background-color: rgb(2, 2, 100);
+    color: white;
+ 
+    height: 55PX;
+    font-weight: bold;
+    font-size: 60PX;
+    top: 33px;
+    padding-left: 5px;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.6);
+    padding-bottom: 80px;
+    cursor: no-drop;
+}
+
+.slide-container .indicators{
+    
+    
+}
+.slide-container .indicators ul{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    top: 200px;
+
+    
+}
+.slide-container .indicators ul li{
+display: inline-block;
+background-color: rgb(2, 0, 104);
+color: aliceblue;
+font-size: 25px;
+height: 30px;
+width: 30px;
+font-weight: bold;
+border-radius: 10px;
+margin: 0 2px;
+cursor: pointer;
+}
+.slide-container .indicators ul li.active{
+    background-color: white;
+    color: rgb(3, 3, 102);
+    border: 1px solid rgb(2, 2, 90);
+}

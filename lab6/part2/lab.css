@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.todo-container{
+    width: 500px;
+    margin:50px auto 0;
+    background-color: #f6f6f6;
+}
+.todo-container .add-task{
+     background-color: rgba(0, 49, 132, 0.967);
+    padding :10px;
+    position: relative;
+}
+.todo-container .add-task input{
+    display: inline-block;
+    padding: 7px 15px;
+    background-color: rgb(237, 237, 237);
+    width: calc(100% - 40px);
+    font-size: 35px;
+    border-radius: 10px;
+    outline: none;
+    border: 0px;
+
+}
+.todo-container .add-task input:focus{
+outline: none;
+background-color: rgb(255, 255, 255);
+
+}
+
+.todo-container .add-task .plus{
+    position: absolute;
+    height:55px;
+    width:55px;
+    background-color: rgba(94, 151, 251, 0.967);
+    right: 25px;
+    border-radius:50%;
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 80px;
+    color: #f6f6f6;
+    transition: transform .2s;
+    
+}
+.todo-container .add-task .plus:hover{
+background-color: rgba(41, 118, 253, 0.967);
+color: rgb(219, 219, 219);
+transform: rotate(30deg);
+} 
+.todo-container .tsk-content{
+    padding: 15px;
+}
+.todo-container .tsk-content .no_task_message{
+    font-size: 20px;
+    color: #626262;
+}
+.todo-container .tsk-content > span{
+display: block;
+padding: 10px;
+background-color: white;
+}
+.todo-container .tsk-content > span:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.todo-container .tsk-content .box-tsk .delete{
+    float:right;
+    background-color: rgb(186, 0, 0);
+    border-radius: 10px;
+    padding: 5px 8px;
+    position: relative;
+    line-height: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.todo-container .tsk-content .box-tsk .comple{
+    float:right;
+    background-color: rgb(0, 81, 17);
+    border-radius: 10px;
+    padding: 5px 8px;
+    position: relative;
+    line-height: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.todo-container .tsk-content .box-tsk .comple:hover{
+    background-color: rgb(0, 78, 26);
+    transform: scale(1.1);
+}
+
+.dleteAll{
+    float:right;
+    background-color: rgb(186, 0, 0);
+    border-radius: 10px;
+    padding: 5px 8px;
+    position: relative;
+    line-height: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.todo-container .tsk-content .box-tsk .delete:hover{
+    background-color: rgb(97, 0, 0);
+    transform: scale(1.1);
+}
+
+.todo-container .tsk-content .box-tsk.finish{
+    background-color: rgb(199, 247, 199);
+}
+.tsk-statues{
+     margin: 10px auto;
+     width:500px;
+     font-size: 12px;
+     overflow: hidden;
+
+}
+.tsk-statues .tsk-count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+
+}
+.tsk-statues .completed-tas{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+
+}
+.tsk-statues .tsk-count span,
+.tsk-statues .completed-tas span
+{
+    color: #ffffff;
+    padding:1px 5px;
+    font-size: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.tsk-statues .completed-tas span{
+    background-color: red;
+}
+.tsk-statues .tsk-count span{
+    background-color: rgb(14, 78, 0);
+}
